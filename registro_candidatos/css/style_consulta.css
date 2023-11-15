@@ -1,0 +1,11 @@
+*{
+    margin:0; /*Margenes del elemento*/
+    padding: 0; /*relleno del elemento*/
+}
+body{
+    font-family: sans-serif; /*topo de letra*/
+    font-size: 15px; /*tamaño de letra*/
+    margin:0; /*Margenes del elemento*/
+    background-color:rgba(204, 204, 204, 0.589); /*fondo de la pagina*/
+    background-size: cover; /*Tamaño del fondo asignado*/
+}

@@ -1,0 +1,183 @@
+* {
+
+    box-sizing: border-box; /* Ancho y alto total de la pagina. */
+
+}
+
+body {
+
+    margin: 0; 
+    font-family: sans-serif; /* Tipo de fuente. */
+    font-size: 15px; /* Tamaño de fuente. */
+    background-image: url("../img/fondo.jpg"); /* Color de fondo del cuerpo. */
+    background-size: cover; /* Dimencionar la imagen de fondo. */
+    display: flex; /* Permite colocar cajas en forma de celda, siendo mas adaptable. */
+    justify-content: center; /* Centrar horizontalmente. */
+    align-items: center; /* Centrar verticalmente. */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana. */
+ 
+}
+
+/* Estilo formulario */
+
+.form-container {
+
+    margin: 0 auto;
+    width: 600px; /* Ancho del formulario. */
+    max-width: 100%; /* Ancho maximo. */
+    padding: 20px; /* Espacio de relleno del formulario. */
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); /* Crear sombra detras del formulario. */
+    background-color: #f4f4f4; /* Color de fondo del formulario. */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical. */
+
+}
+
+.form-container h1{
+
+    text-align: center; /* Alinear el titulo del formulario al centro. */
+    margin-top: 0; /* Margen superior. */
+
+}
+
+
+/* Estilo de los campos del formulario*/
+
+.formulario label, .formulario input[type="text"], .formulario input[type="password"] {
+
+    display: block; /* Utilizar todo el espacio disponible. */
+    width: 100%; /* Ancho de los elementos. */
+    font-size: 1.3em; /* Tamaño de la fuente. */
+    margin-bottom: 15px; /*Margen inferior. */
+    border-radius: 30px; /*Redondeado de los campos. */
+    
+}
+
+.formulario input {
+
+    padding: 10px; /* Espacio de relleno de los campos del formulario. */
+    background: rgba(0, 0, 0, 0.1); /* Color de fondo. */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde de los campos del formulario. */
+
+}
+
+
+.texto_label {
+
+    display: inline-block; /*. No me acuerdo. */
+    text-align: center; /* Texto alineado al centro. */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+
+}
+
+
+
+.password-container {
+
+    position: relative; /* Posicionamiento relativo asi mismo. */
+
+}
+
+
+/* Estilo botones */ 
+
+
+.botones {
+
+    display: flex; /* Configurar los botones con flexbox, lo que permite alinearlos siendo mas adaptable. */
+    justify-content: space-between; /* distribuye el espacio entre y alrededor de los items flex. */
+    margin-top: 10px; /* Margen superior de los botones. */
+    padding: 0 20px; /* Añade un poco de espacio horizontal para separar los botones. */
+
+}
+
+.btn-login {
+
+    width: 100%; /* Ancho del boton registrarse. */
+    padding: 10px; /* Espacio de relleno del boton. */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #000000; /* Color del texto del botón de envío */
+    cursor: pointer; /* Mostrar puntero en forma de mano. */
+    margin-top: 10px; /*  Margen superior del boton. */
+    border-radius: 30px; /* Redondeado del boton. */
+    font-weight: bold; /* Grosor de fuente */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Borde del boton. */
+
+}
+
+
+/* Estilo del boton ingresar */
+
+input[type="submit"] {
+
+    width: 100%; /* Ancho del boton. */
+    padding: 10px; /* Espacio de relleno del boton */
+    background-color: #7e7e7e; /* Color de fondo del botón de envío */
+    color: #fff; /* Color del texto del botón de envío. */
+    border: none; /* Elimina el borde del boton. */
+    cursor: pointer; /* Mostrar puntero en forma de mano. */
+    margin-top: 10px; /*Margen superior del boton. */
+    border-radius: 30px; /* Redondeado del boton. */
+    margin-right: 20px; /* Margen hacia la derecha del boton. */
+    font-weight: bold; /* Grosor de fuente */
+
+}
+
+
+input[type="submit"]:hover {
+
+    background-color: #5c5c5c; /* Cambio de color al pasar el ratón sobre el botón */
+
+}
+
+.btn-login:hover{
+
+    background-color: #d1d1d1; /* Color de fondo cuando el cursor pase por encima del boton. */
+
+}
+
+
+/* Estilo para el ícono del ojo */
+
+.field-icon {
+
+    position: absolute; /*Pocisionar automaticamente en el punto de inicio*/
+    top: 50%; /*pocision superior del elemento*/
+    right: 10px; /*Pocision de la parte derecha del elemento*/
+    transform: translateY(-50%); /*Translada a profundidad el elemento*/
+    cursor: pointer; /*Cambia de forma cada que el mouse pase*/
+
+}
+
+/* Estilo para el campo de contraseña */
+
+.password-container {
+    position: relative; /*Elemento pocisionado relativamente a si mismo*/
+    
+}   
+
+.texto_label_pswd{
+    color: rgba(0, 0, 0, 0.34);
+    display: inline-block; /* Establecer que un elemento ocupara el espacio del contenido del mismo y el siguiente elemento se posiciona a la derecha. */
+    text-align: center; /* Alinear el texto al centro. */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+/* Estilo para los mensajes de error */
+.alert {
+    margin-bottom: 500px; /* Margen superior para separar de los demás elementos */
+    padding: 15px; /* Espacio de relleno */
+    border-radius: 10px; /* Redondeado del borde */
+    font-size: 1.2em; /* Tamaño de fuente */
+    text-align: center; /* Alinear al centro */
+    font-weight: bold; /* Texto en negrita */
+    position: absolute;
+}
+
+.alert-primary {
+    background-color: #3498db; /* Color de fondo del mensaje de éxito */
+    color: #fff; /* Color del texto */
+}
+
+.alert-error {
+    background-color: #e74c3c; /* Color de fondo del mensaje de error */
+    color: #fff; /* Color del texto */
+}

@@ -1,0 +1,219 @@
+/* Importa la fuente 'Amarante' de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+/* Restablece los estilos predeterminados para la mayoría de los elementos */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Añade un desplazamiento vertical solo en el eje Y para el elemento HTML */
+html { overflow-y: scroll; }
+
+/* Configuración general para el cuerpo del documento */
+body { 
+  background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* Fondo con patrón */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente */
+  font-size: 62.5%; /* Establece el tamaño de fuente base al 62.5% del tamaño predeterminado */
+  line-height: 1; /* Espacio entre líneas */
+  color: #585858; /* Color del texto */
+  padding: 22px 10px; /* Relleno exterior */
+  padding-bottom: 55px; /* Relleno en la parte inferior */
+}
+
+/* Estilo de selección de texto */
+::selection { background: #5f74a0; color: #fff; }
+::-moz-selection { background: #5f74a0; color: #fff; }
+::-webkit-selection { background: #5f74a0; color: #fff; }
+
+/* Estilo para los saltos de línea */
+br { display: block; line-height: 1.6em; } 
+
+/* Configura los elementos semánticos de HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* Establece una lista sin viñetas */
+ol, ul { list-style: none; }
+
+/* Estilos para los elementos de entrada y textarea */
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+/* Configura los estilos para citas */
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; } 
+
+/* Configura los estilos de tablas */
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  border: 1px solid #00000052; /* Borde de la tabla */
+}
+img { border: 0; max-width: 100%; } /* Establece el ancho máximo de las imágenes */
+
+/* Estilo para el encabezado h1 */
+h1 { 
+  font-family: 'Amarante', Tahoma, sans-serif; /* Fuente */
+  font-weight: bold; /* Peso de la fuente */
+  font-size: 3.6em; /* Tamaño de fuente */
+  line-height: 1.7em; /* Espacio entre líneas */
+  margin-bottom: 10px; /* Margen inferior */
+  text-align: center; /* Alineación centrada */
+}
+
+/* Estilo para las celdas de encabezado de tabla */
+th{
+  border: 1px solid #0909095e; /* Borde de las celdas de encabezado */
+}
+
+/* Estilo para las celdas de tabla */
+td{
+  border: 1px solid #09090934; /* Borde de las celdas de tabla */
+}
+
+/* Estilos para la estructura de la página */
+#wrapper {
+  display: block;
+  width: 850px; /* Ancho del contenedor principal */
+  background: #fff; /* Color de fondo */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 10px 17px; /* Relleno interior */
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35); /* Sombra */
+}
+
+/* Estilos para la tabla de palabras clave */
+#keywords {
+  margin: 0 auto; /* Centra el elemento en la página */
+  font-size: 1.2em; /* Tamaño de fuente */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para el encabezado de la tabla */
+#keywords thead {
+  cursor: pointer;
+  background: #c9dff0; /* Fondo del encabezado */
+}
+
+#keywords thead tr th { 
+  font-weight: bold; /* Peso de la fuente */
+  padding: 12px 30px; /* Relleno en las celdas del encabezado */
+  padding-left: 42px; /* Relleno izquierdo adicional */
+}
+
+#keywords thead tr th span { 
+  padding-right: 20px; /* Relleno derecho */
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd; /* Fondo cuando se ordena */
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url('https://i.imgur.com/SP99ZPJ.png'); /* Imagen para el encabezado ordenado ascendente */
+}
+
+#keywords thead tr th.headerSortDown span {
+  background-image: url('https://i.imgur.com/RkA9MBo.png'); /* Imagen para el encabezado ordenado descendente */
+}
+
+/* Estilos para las filas de la tabla */
+#keywords tbody tr { 
+  color: #555; /* Color del texto */
+}
+
+#keywords tbody tr td {
+  text-align: center; /* Alineación del texto en las celdas de la tabla */
+  padding: 15px 10px; /* Relleno en las celdas de la tabla */
+}
+
+#keywords tbody tr td.lalign {
+  text-align: left; /* Alineación izquierda en celdas específicas */
+}
+
+/* Estilos para contenedores */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  margin-left: 350px; /* Margen izquierdo */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilos para el gráfico */
+#chart1 {
+  width: 100%; /* Ajusta el ancho del gráfico según tus necesidades */
+  height: 100%; /* Ajusta la altura del gráfico según tus necesidades */
+}
+
+/* Estilo del botón "Atrás" */
+.btn-atras button {
+  display: flex; /* Permite que el botón sea flexible */
+  height: 4em; /* Alto del botón */
+  width: 150px; /* Ancho del botón */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  background-color: #eeeeee4b; /* Color de fondo del botón */
+  border-radius: 20px; /* Redondea las esquinas del botón */
+  letter-spacing: 1px; /* Espacio entre las letras */
+  transition: all 0.2s linear; /* Animación al cambiar propiedades */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  border: none; /* Sin borde */
+  background: #bfbaba; /* Color de fondo */
+  bottom: 93%; /* Coloca el botón en la parte inferior */
+  position: absolute; /* Posición absoluta */
+  margin-left: 90%; /* Margen izquierdo */
+}
+
+/* Estilo para enlaces */
+a {
+  text-decoration: none; /* Quita la decoración de los enlaces */
+}
+
+/* Estilo para el icono dentro del botón "Atrás" */
+.btn-atras button > svg {
+  margin-right: 5px; /* Margen derecho del icono */
+  margin-left: 5px; /* Margen izquierdo del icono */
+  font-size: 10px; /* Tamaño de fuente del icono */
+  transition: all 0.4s ease-in; /* Animación al cambiar propiedades */
+}
+
+/* Estilo del icono en el botón "Atrás" al pasar el ratón */
+.btn-atras button:hover > svg {
+  font-size: 5.2em; /* Tamaño de fuente del icono al pasar el ratón */
+  transform: translateX(-5px); /* Desplaza el icono horizontalmente */
+}
+
+/* Estilo del botón "Atrás" al pasar el ratón */
+.btn-atras button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /* Color y tamaño de la sombra */
+  transform: translateY(-2px); /* Desplaza el botón verticalmente */
+}

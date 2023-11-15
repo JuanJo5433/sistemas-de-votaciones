@@ -1,0 +1,190 @@
+*{ 
+    margin:0; /*Margen de la pagina*/
+    padding: 0; /*Relleno de la pagina*/
+}
+body{
+    font-family: sans-serif; /*topo de letra*/
+    font-size: 15px; /*tamaño de letra*/
+    margin:0; /*Margen de la pagina*/
+    background-color:rgba(204, 204, 204, 0.589); /*Color del fondo de la inteerfaz*/
+    background-size: cover; /*Tamaño del fondo*/
+    
+}
+/*cuadro que contiene el formulario*/
+.container {
+    width: 600px; /*Ancho del formulario*/
+    max-width: 100%; /*Maximo ancho del formulario*/
+    margin: auto; /*Margen del formulario*/
+    margin-top: 20px; /*Margen superior ddel formulario*/
+    margin-bottom: 20px; /*Margen inferior del formulario*/
+    padding: 20px; /*Relleno exterior del formulario*/
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); /*Color de la sombra */
+    position: relative; 
+    background-color: #f4f4f4; /* Color de fondo del formulario*/ 
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+
+}
+/*Estilo al titulo del formulario*/
+.container h1{
+    text-align: center; /*Alinea el texto en el centro*/
+    margin-top: 0; /*Margen superior*/
+    font-size: 20px; /* Tamaño de fuente. */
+}
+/*Cada uno de los campos de informacion*/
+.formulario label, .formulario input[type="text"], .formulario input[type="email"], .formulario input[type="file"], .formulario select {
+    display: block; /*Ocupa el espacio disponible*/
+    width: 95%; /*Ancho del elemento*/
+    font-size: 15px; /*Tamaño de la letra*/
+    margin-bottom: 15px; /*Espacio inferior del elemento*/
+    border-radius: 30px; /*Redondea las esquinas*/
+    
+}
+/*estilo a los campos del formulario*/
+.formulario input, .formulario select {
+    width: 98%; /*Ancho del elemento*/
+    padding: 8px; /*Relleno exterior del elemento*/
+    background: rgba(0, 0, 0, 0.1); /*Color del fondo*/
+    border: 1px solid rgba(0, 0, 0, 0.3); /*Color del borde solido*/
+}
+
+/*efecto cada que pase el mouse*/
+.formulario select option:hover{
+    background-color: #3a3b3d; /*Color del fondo*/
+}
+
+/*estilo a los titulos de los campos del formulario*/
+.texto_label {
+    
+    margin-top: 18px;
+    display: inline-block; /*Permite respetar las margenes y lineas*/
+    text-align: center; /*Alinea el texto en el centro*/
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+.texto_label_genero {
+
+    display: inline-block; /* Establecer que un elemento ocupara el espacio del contenido del mismo y el siguiente elemento se posiciona a la derecha. */
+    font-weight: bold; /* Texto en negrita para las etiquetas. */
+
+}
+
+/* Estilo boton de retroceso */
+
+
+.btn-atras button {
+    display: flex; /*Permite que sea flexible*/
+    height: 3em; /*Alto del boton*/
+    width: 100px; /*Ancho del boton*/
+    align-items: center; /*Permite centrar el elemento*/
+    justify-content: center; /*Alinea en el centro*/
+    background-color: #eeeeee4b; /*Color del fondo del boton*/
+    border-radius: 20px; /*Redondea las esquinas del boton*/
+    letter-spacing: 1px; /*Cantidad de espacio entre las letrass*/
+    transition: all 0.2s linear; /*Permte realizar animacion*/
+    cursor: pointer; /*Cambia cada vez que el mouse pasa*/
+    border: none; /*Borde del boton*/
+    background: #7e7e7e; /*Color de fondo*/
+    bottom: 1px;
+
+}
+
+a {
+    text-decoration: none; /*Elimina la linea de subrayado*/
+}
+
+
+.btn-atras button > svg {
+
+    margin-right: 5px; /*Margen de la parte derecha del boton*/
+    margin-left: 5px; /*Margen de la parte izquierda del boton*/
+    font-size: 50px; /*Tamaño de la letra*/
+    transition: all 0.4s ease-in; /*Permite realizar animacion*/
+}
+
+.btn-atras button:hover > svg {
+    font-size: 5.2em; /*Tamaño de la letra*/
+    transform: translateX(-5px); /*Translada el elemento en el eje X*/
+}
+
+.btn-atras button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /*Color y tamaño de la sombra */
+    transform: translateY(-2px); /*Translada el elemento en el eje Y*/
+}
+
+
+
+
+/* Estilo boton actualizar. */  
+.container h2{
+    padding: 10px; /*Relleno exterior del elemento*/
+    text-align: center; /*Alinea el texto en el centro*/
+    margin-top: 0; /* Espacio superior */
+}
+
+.btn-actualizar button {
+    --primary-color: #645bff; /*Variable inicializada*/
+    --secondary-color: #fff; /*Variable inicializada*/
+    --hover-color: #111; /*Variable inicializada*/
+    --arrow-width: 10px; /*Variable inicializada*/
+    --arrow-stroke: 2px; /*Variable inicializada*/
+    box-sizing: border-box; /**Calcula alto y ancho del elemento*/
+    border: 0; /*borde del elemento*/
+    border-radius: 20px; /*Redondea las puntas del boton*/
+    color: var(--secondary-color); /*Color de la letra*/
+    padding: 1em 1.8em; /*Espacio de relleno*/
+    background: var(--primary-color); /*Color del fondo*/
+    display: flex; /*Permite que el elemento sea flexible a los cambios*/
+    transition: 0.2s background; /*ermite crear animacion*/
+    align-items: center; /*Centra el elemento en su eje*/
+    gap: 0.6em; /*Tamaño de filas y columnas*/
+    font-weight: bold; /*Letra en negrita*/
+    position: absolute; /*pocisiona automaticamente el elemento*/
+    bottom: 20px; /*Pocision inferior del elemento*/
+    margin-left: 70%; /*Espacio a la izquierda del eleemento*/
+    height: 3em; /*Alto del boton*/
+  }
+  
+.btn-actualizar button .arrow-wrapper {
+    display: flex; /*Permite que sea flexible*/
+    justify-content: center; /*Centra el elemento*/
+    align-items: center; /*Alinea al centro*/
+}
+  
+.btn-actualizar button .arrow {
+    margin-top: 1px; /*Espacio superior del elemento*/
+    width: var(--arrow-width); /*Ancho del elemento*/
+    background: var(--primary-color); /*Color del fondo*/
+    height: var(--arrow-stroke); /*Alto del elemento*/
+    position: relative; /*Pocision del elemento rellativo a si mismo*/
+    transition: 0.2s; /*Permite crear una animacion*/
+}
+  
+.btn-actualizar button .arrow::before {
+    content: ""; /*Genera nuevo contenido*/ /* Establece el contenido del elemento a una cadena vacia. */
+    box-sizing: border-box; /*Calcula el ancho y alto*/ /* Establece el modo de calculo del ancho y alto en border box. */
+    position: absolute; /*Pocision del elemento*/ /* Posicion del elemento absoluta. */
+    border: solid var(--secondary-color); /*Color del borde*/ 
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0; /*Ancho del elemento*/ 
+    display: inline-block; /*Ocupa el tamaño y pocisiona a la derecha*/ /* Permite que el elemento se comporte como un bloque en linea. */
+    top: -3px; /* Posicion superior del elemento. */
+    right: 3px; /* Posicion derecha del elemento. */
+    transition: 0.2s; /* Permite que el estilo del elemento tenga una animacion durante 0.2 segundos. */    
+    padding: 3px; /* Relleno del elemento. */
+    transform: rotate(-45deg); /* Transformacion del elemento con rotacion de 45 grados. */
+ /*Espacio superior*/ /*Espacio a la derecha*/ /*Permite crear animacion*/ /*Relleno del elemento*/ /*Rota el elemento en su eje*/}
+  
+.btn-actualizar button:hover {
+
+    background-color: var(--hover-color); /*Color del fondo*/ /* Color de fondo. */
+}
+  
+.btn-actualizar button:hover .arrow {
+    background: var(--secondary-color); /*Color del fondo*/ /* Color de fondo. */
+}
+  
+.btn-actualizar button:hover .arrow:before {
+    right: 0; /*Espacio a la derecha*/ /* Posicion derecha del elemento. */
+}
+
+
+

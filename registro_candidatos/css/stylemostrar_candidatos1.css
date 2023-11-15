@@ -1,0 +1,138 @@
+*{
+    margin:0; /*Margen de la pagina*/
+    padding: 0; /*Espacio de relleno de la pagina*/
+    text-decoration: none;/*Elimina el subrayado de los link*/
+}
+body{
+    margin:0; /*Margen del body*/
+    background-image: url('../img/fondo.jpg'); /*Imagen del fondo*/
+    background-size: cover; /*Ajusta el tamaño de la imagen*/
+}
+h1{
+    font: bold; /*Letra en negrita*/
+    margin: auto; /*Margen automatica*/
+    padding: 5vw; /*Tamaño del relleno*/
+    text-align: center; /*Alinea el texto en el centro*/
+    font-family:sans-serif; /*Tipo de letra */
+    font-size: 30px; /*Tamaño de la letra*/  /* */
+    color:rgb(5, 5, 5); /*Color de la letra*/  /* */
+}
+.form{ 
+    
+    margin: 100px; /*Margen del formulario*/  /* */
+    display: flex; /*Permite que sea flexible a los cambios*/  /* */
+    margin-top: 30px; /*Espacio superior*/ /* */ 
+    flex-wrap: wrap; /*Ajusta el contenido en una linea*/  /* */
+    gap: 50px; /*Tamaño de filas o columnas*/  /* */
+    justify-content: center; /*Centra el contenido*/  /* */
+    align-items: flex-start; /*Alinea elelemento al inicio*/  /* */
+}
+.container{
+    background-color: #e4e4e4bb; /*Color del fondo*/  /* */
+    box-sizing: border-box; /*Crea un borde*/  /* */
+    padding: 10px; /*Tamaño del relleno*/  /* */
+    width: 500px; /*Ancho del elemento*/  /* */
+    margin: auto; /*Margen automatica*/  /* */
+    display: flex; /*Permite que sea flexible a los cambios*/  /* */
+    cursor: pointer; /*Cambia el cursor cada vez que pasa*/  /* */
+    border: 1px solid #000000; /*Tamaño y color del border*/  /* */
+    border-radius: 20px; /*Redondea las puntas del elemento*/  /* */
+    transition: .5s; /*Permite crear animacion*/  /* */
+}
+.container:hover{
+    transform: scale(1.1); /*Permite hacer efecto zoom*/  /* */
+    box-shadow: 0 0 15px #454646; /*Tamaño y color de la sombre*/  /* */
+    /*transform: scale(.9);*/
+}
+#image{
+    display: flex; /*Permite que sea flexible a los cambios*/  /* */
+    width: 15%;  /* */ 
+    height: 10%;  /* */
+ /*Ancho de la imagen*/ /*Alto de la imagen*/}
+
+
+
+.boton{
+    text-decoration: none; /*Elima el subrayado de los links*/  /* */
+    color:#000000;/*Color del texto*/  /* */
+    font-family: sans-serif; /*Tipo de fuente*/  /* */
+    font-size: 20px; /*Tamaño de la letra*/  /* */
+    padding: 10px; /*Tamaño del relleno*/  /* */
+    margin:10px; /*Tamaño de la margen*/  /* */
+}
+
+
+
+
+.boton_atras {
+    float: right; /*Posiciona el la parte derecha*/  /* */
+    display: block; /*Ocupa el espacio disponible*/  /* */
+}
+
+
+#atras-btn {
+    float: inline-end; /*Posiciona el elemento al final*/  /* */
+    background-color: #30567b; /*Color del fondo*/  /* */
+    color: #fff; /*Color de la letra*/  /* */
+    padding: 10px 20px; /*Espacio superior e inferior de l relleno*/  /* */
+    border: none; /*Elimina el borde*/  /* */
+    border-radius: 5px; /*Redondea las puntas del elemento*/  /* */
+    cursor: pointer; /*Cambia el cursor cada vez que pasa*/  /* */
+    font-weight: bold; /*Letra en negrita*/  /* */
+    margin-top: 30px; /*Espacio superior del elemento*/  /* */
+    margin-right: 50px; /*Espacio a la derecha del elemento*/  /* */
+    text-transform: uppercase; /*Transforma la letra a mayuscula*/  /* */
+    letter-spacing: 1px; /*Espacio entre cada letra*/  /* */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*Tamaño y color de la sombra*/  /* */
+}
+
+#atras-btn:hover {
+    transform: scale(1.05); /*  /* */
+}
+
+/* Estilo boton de retroceso */
+
+
+.btn-atras button {
+    display: flex; /*Permite que sea flexible*/
+    height: 3em; /*Alto del boton*/
+    width: 100px; /*Ancho del boton*/
+    align-items: center; /*Permite centrar el elemento*/
+    justify-content: center; /*Alinea en el centro*/
+    background-color: #eeeeee4b; /*Color del fondo del boton*/
+    border-radius: 20px; /*Redondea las esquinas del boton*/
+    letter-spacing: 1px; /*Cantidad de espacio entre las letrass*/
+    transition: all 0.2s linear; /*Permte realizar animacion*/
+    cursor: pointer; /*Cambia cada vez que el mouse pasa*/
+    border: none; /*Borde del boton*/
+    background: #bfbaba; /*Color de fondo*/
+    bottom: 93%;  /* */
+    position: absolute;  /* */
+    margin-left: 90%;  /* */
+    
+  
+}
+  
+a {
+
+    text-decoration: none;  /* */
+}
+  
+  
+.btn-atras button > svg {
+  
+    margin-right: 5px; /*Margen de la parte derecha del boton*/
+    margin-left: 5px; /*Margen de la parte izquierda del boton*/
+    font-size: 10px; /*Tamaño de la letra*/
+    transition: all 0.4s ease-in; /*Permite realizar animacion*/
+}
+  
+.btn-atras button:hover > svg {
+    font-size: 5.2em; /*Tamaño de la letra*/
+    transform: translateX(-5px); /*Translada el elemento en el eje X*/
+}
+  
+.btn-atras button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /*Color y tamaño de la sombra */
+    transform: translateY(-2px); /*Translada el elemento en el eje Y*/
+}

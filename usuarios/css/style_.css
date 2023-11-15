@@ -1,0 +1,94 @@
+body {
+  background: #f0f0f0; /* Fondo gris claro. */
+  font-family: Arial, sans-serif; /* Tipo de fuente. */
+  margin: 0; /* Sin margen en el cuerpo de la página. */
+  padding: 0; /* Sin relleno en el cuerpo de la página. */
+  display: flex; /* Usa un diseño flexible (flexbox). */
+  flex-direction: column; /* Diseño de columna para los elementos hijos. */
+}
+
+table {
+  margin-top: 10px; /* Margen superior de 10 píxeles. */
+  border-collapse: collapse; /* Colapsa los bordes de las celdas de la tabla. */
+  width: 100%; /* Ancho al 100%. */
+  border: 1px solid #424242; /* Borde de 1 píxel sólido con color gris oscuro. */
+  border-bottom: 1px solid #424242; /* Borde inferior de la tabla. */
+}
+
+th {
+  background-color: #333333; /* Fondo gris oscuro para encabezados de tabla. */
+  color: white; /* Texto en color blanco. */
+}
+
+th, td {
+  padding: 10px; /* Relleno de 10 píxeles para encabezados y celdas de tabla. */
+  text-align: center; /* Texto centrado en las celdas. */
+  border-bottom: 1px solid #dddddd; /* Borde inferior de las celdas de la tabla. */
+}
+
+a, input[type="submit"] {
+  text-align: center; /* Texto centrado en los enlaces y botones de envío. */
+  display: inline-block; /* Mostrar como bloque en línea. */
+  background: #555; /* Fondo gris oscuro para enlaces y botones de envío. */
+  padding: 6px 10px; /* Relleno interior. */
+  border-radius: 5px; /* Borde redondeado. */
+  text-decoration: none; /* Sin decoración de texto en los enlaces. */
+  color: white; /* Texto en color blanco. */
+  border: 2px solid #333; /* Borde de 2 píxeles sólido con color gris oscuro. */
+  cursor: pointer; /* Cambio del cursor al pasar sobre ellos. */
+  font-size: 16px; /* Tamaño de fuente. */
+  transition: background 0.3s; /* Transición de color al pasar el mouse. */
+}
+
+a:hover, input[type="submit"]:hover {
+  background: #777; /* Cambia el color al pasar el mouse a gris más claro. */
+}
+
+h1 {
+  font-family: sans-serif; /* Tipo de fuente. */
+  margin-top: 5%; /* Margen superior del 5%. */
+  text-align: center; /* Texto centrado. */
+  color: #333333; /* Color de texto gris oscuro. */
+}
+
+.contenedor_popup {
+  top: 50%; /* Posiciona en la mitad superior. */
+  left: 50%; /* Posiciona en la mitad izquierda. */
+  position: absolute; /* Posición absoluta en relación al padre. */
+  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente. */
+  width: 400px; /* Ancho de 400 píxeles. */
+  transition: all 0.2s; /* Transición de todas las propiedades en 0.2 segundos. */
+  background-color: white; /* Fondo blanco. */
+  border: 1px solid #ddd; /* Borde de 1 píxel sólido con color gris claro. */
+}
+
+.caja_popup2 {
+  display: block; /* Muestra como bloque. */
+  position: absolute; /* Posición absoluta en relación al padre. */
+  padding: 0; /* Sin relleno. */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro transparente. */
+  width: 100%; /* Ancho al 100%. */
+  height: 100%; /* Altura al 100%. */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  font-size: 16px; /* Tamaño de fuente. */
+  background-color: white; /* Fondo blanco. */
+  color: black; /* Texto en color negro. */
+  padding: 6px 10px; /* Relleno interior. */
+  border-radius: 5px; /* Borde redondeado. */
+}
+
+select {
+  width: 80%; /* Ancho al 80%. */
+  font-size: 14px; /* Tamaño de fuente. */
+}
+
+.cont {
+  margin-left: auto; /* Margen izquierdo automático para centrar horizontalmente. */
+  margin-right: auto; /* Margen derecho automático para centrar horizontalmente. */
+  max-width: 1260px; /* Ancho máximo de 1260 píxeles. */
+  width: 100%; /* Ancho al 100%. */
+}

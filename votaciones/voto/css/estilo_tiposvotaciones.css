@@ -1,0 +1,335 @@
+/* Estilo de todo el cuerpo de la pagina */
+
+body {
+
+  font: 400 16px/1.65em Open Sans, Arial, Sans-Serif; /* Tipo y tamaño de fuente para todo el cuerpo de la pagina. */
+  letter-spacing: -0.015em; /* Espacio entre caracteres. */
+  text-align: center; /* Centra el contenido horizontalmente. */
+  background-image: url("../../img/fondo.jpg"); /* Imagen de fondo de la pagina. */
+  background-size: cover; /* Dimencionar la imagen de fondo. */
+  
+}
+
+
+/* Estilo del contenedor principal de la pagina */
+
+.container {
+
+  display: flex; /* Configurar el contenedor con flexbox, lo que permite alinearlos en columnas. */
+  flex-wrap: wrap; /* Permite que los elemntos se envuelvan si no caben en una sola fila. */
+  gap: 10px;  /* Espacio entre los elementos. */
+  justify-content: center; /* Agregar el contenido en el centro. */
+  align-items: center; /* Alinear los elementos en la parte central del contenedor. */
+  bottom: 80%;
+}
+
+
+/* Estilo de las tarjetas de la pagina. */ 
+
+.tarjet {
+
+  width: 300px; /* Ancho de la tarjeta. */
+  height: 400px; /* Alto de la tarjeta. */
+  padding: 10px; /* Relleno de las tarjetas. */
+  border: none; /* Elimina el borde de las tarjetas. */
+  background: rgba(255, 255, 255, .3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 10px; /* redondear las tarjetas. */
+  margin: 50px; /* Agregar una margen alrededor. */
+  text-align: center; /* Centra el contenido horizontalmente. */
+  display: flex;  /* Configurar las tarjetas con flexbox, lo que permite alinearlos en columnas. */
+  flex-direction: column; /* Direccion de las columnas dentro de las tarjetas. */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Crea una transformacion suave. */
+  cursor: pointer; /* Mostrar puntero en forma de mano. */
+
+}
+
+
+.tarjet:hover {
+
+  transform: translateY(-10px); /* Permite realizar una transformacion hacia arriba cuando el puntero pase por encima. */
+
+}
+
+
+.tarjet img {
+
+  object-fit: cover;
+  height: 100%; /* Alto de la imagen. */
+  width: 100%; /* Ancho de la imagen. */
+
+}
+
+
+a {
+
+  text-decoration: none; /* Elimina la decoracion de los hipervinculos. */
+
+}
+
+
+.tarjet h2 {
+
+
+  position: absolute; /* Posicionamiento de todo el contenido. */
+  margin-left: 120px; /* Margen izquierdo del elemento. */
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px black;
+}
+
+
+
+p {
+  
+  margin-top: 3%;
+  font-size: 25px; /* Tamño de la fuente. */
+  text-align: center; /* Texto alineado al centro. */
+  letter-spacing: 4px; /* Espacio entre caracteres. */
+
+}
+
+
+.option-input {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; /* Permiten eliminar las apariencias nativas de los elementos, esto permite que las opciones puedan ser personalizadas. */
+  height: 40px; /* Alto del elemento. */
+  width: 40px;  /* Ancho del elemento. */
+  transition: all 0.15s ease-out 0s; /* Crear una transformacion. */
+  background: #cbd1d8; /* Color de fondo. */
+  border: none; /* Elimina el bordes. */
+  color: #fff; /*Color de la letra */
+  cursor: pointer; /* Mostrar puntero en forma de mano. */
+  outline: none; /* No dibuja ningun borde. */
+  position: absolute; /* Se posiciona automaticamente en el punto de inicio de su elemento padre. */
+  z-index: 1000; /* Orden de un elemento posicionado y sus decendientes. */
+
+}
+
+
+.option-input:hover {
+
+  background: #9faab7; /* Color de fondo, cuando el cursor pase por encima. */
+
+}
+
+
+.option-input:checked {
+
+  background: #40e0d0; /* Color de fondo si el elemento es seleccionado. */
+
+}
+
+
+.option-input:checked::before {
+
+  width: 40px; /* Ancho del pseudoelemento. */
+  height: 40px; /* Alto del pseudoelemento. */
+  display: flex; /* Permite que el pseudoelemento tenga un comportamiento adaptable. */
+  content: '✓'; /* Signo que aparece al ser seleccionada la opcion. */
+  font-size: 25px; /* Tamaño de fuente. */
+  font-weight: bold; /* Grosor de la fuente. */
+  position: absolute; /* Se posiciona automaticamente en el punto de inicio de su elemento padre. */
+  align-items: center; /* Alinear los elementos en la parte central. */
+  justify-content: center; /* Agregar el contenido en el centro. */
+
+}
+
+
+.option-input h2 {
+
+  margin: 0; /* Margenes en 0. */
+
+}
+
+
+.option-input:checked::after {
+
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s; 
+  animation: click-wave 0.65s; /* Animacion al hacer click. */
+  background: #40e0d0; /* Color del  elemento despues de ser seleccionado. */
+  content: ''; /* Crea un contenido del pseudoelemento vacio. */
+  display: block; /* Permite que pueda ser posicionado y animado. */
+  position: relative;
+  z-index: 100; /* Asegura que el pseudoelemento aparezca sobre todos los elementos. */
+
+}
+
+
+.option-input.radio {
+
+  border-radius: 50%; /* Borde de los botones de opcion. */
+
+}
+
+
+.option-input.radio::after {
+
+  border-radius: 50%; /* Borde de los botones de opcion. */ 
+
+}
+
+
+/* Estilo boton */
+
+.btn-votar button {
+
+  font-family: inherit; /* Fuente de los botones para que sea la misma que la fuente del elemento padre. */
+  font-size: 18px; /* Tamaño de fuente. */
+  background: linear-gradient(to bottom, #6badb8 0%, #537ab1 100%); /* Color de fondo de los botones */
+  color: white; /* Color del texto. */
+  padding: 0.8em 1.2em; /* Relleno de los botones. */
+  display: flex; /* Establece el modo de flexbox, para poder alinearlos horizontalmente como verticalmente. */
+  align-items: center; /* Alinea los elementos de los botones  en el centro verticalmente. */
+  justify-content: center; /* Alinea los elementos de los botones en el centro horizontalmente. */
+  border: none; /* Elimina el borde de los botones. */
+  border-radius: 25px; /* Redondear los botones. */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agregar sombra detras de los botones. */
+  transition: all 0.3s; /* Aplica una transicion a todos los botones. */
+
+}
+
+
+.btn-votar button:hover {
+
+  transform: translateY(-3px); /* Mueve los botones 3 pixeles hacia arriba cuando el cursor pase por encima. */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Poner una sombra detras del boton cuando el cursor pase por encima. */
+
+}
+
+
+.btn-votar button:active {
+
+  transform: scale(0.95); /* Reduce el tamaño de los botones cuando se hace click sobre ellos. */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Poner una sombra detras de los botones cuando se haga click sobre el boton. */
+
+}
+
+
+.btn-votar button span {
+
+  display: block; /* Permitir que los elementos span para que tengan su propio ancho y alto para poder ser posicionados. */
+  margin-left: 0.4em; /* Establecer un margen izquierdo. */
+  transition: all 0.3s; /* Establecer una transicion de todos los elementos span. */
+
+}
+
+
+.btn-votar button svg {
+
+  width: 18px; /* Ancho de los elementos svg. */
+  height: 18px; /* Alto de los elementos svg. */
+  fill: white; /* Color de relleno de los elementos svg. */
+  transition: all 0.3s; /* Aplica una transicion a todos los elementos svg. */
+
+}
+
+
+.btn-votar button .svg-wrapper {
+
+  display: flex; /* Establece los elementos svg-wrapper en flexbox para alinearlo horizontal como verticalmente. */
+  align-items: center; /* Alinea los elementos svg-wrapper en el centro verticalmente. */
+  justify-content: center; /* Alinea los elementos svg-wrapper en el centro horizontalmente. */
+  width: 30px; /* Acho del svg-wrapper. */
+  height: 30px; /* Alto del svg-wrapper. */
+  border-radius: 50%; /* Redondear los svg-wrapper. */
+  background-color: rgba(255, 255, 255, 0.2); /* color de fondo. */
+  margin-right: 0.5em; /* Establecer un margen derecho. */
+  transition: all 0.3s; /* Aplica una transicion a todos los elementos svg-wrapper. */
+
+}
+
+
+.btn-votar button:hover .svg-wrapper {
+
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo cuando el cursor pase por encima. */
+
+}
+
+.btn-votar button:hover svg {
+
+  transform: rotate(45deg); /* Rotacion del elemento cuando el cursor pase por encima. */
+
+}
+
+/* Estilo boton de retroceso */
+
+
+.btn-atras button {
+  display: flex; /*Permite que sea flexible*/
+  height: 4em; /*Alto del boton*/
+  width: 150px; /*Ancho del boton*/
+  align-items: center; /*Permite centrar el elemento*/
+  justify-content: center; /*Alinea en el centro*/
+  background-color: #eeeeee4b; /*Color del fondo del boton*/
+  border-radius: 20px; /*Redondea las esquinas del boton*/
+  letter-spacing: 1px; /*Cantidad de espacio entre las letrass*/
+  transition: all 0.2s linear; /*Permte realizar animacion*/
+  cursor: pointer; /*Cambia cada vez que el mouse pasa*/
+  border: none; /*Borde del boton*/
+  background: rgba(127, 189, 200, 0.855); /*Color de fondo*/
+  bottom: 90%;
+  position: absolute;
+  margin-left: 88%;
+  
+
+}
+
+a {
+
+  text-decoration: none;
+}
+
+
+.btn-atras button > svg {
+
+  margin-right: 5px; /*Margen de la parte derecha del boton*/
+  margin-left: 5px; /*Margen de la parte izquierda del boton*/
+  font-size: 10px; /*Tamaño de la letra*/
+  transition: all 0.4s ease-in; /*Permite realizar animacion*/
+}
+
+.btn-atras button:hover > svg {
+  font-size: 5.2em; /*Tamaño de la letra*/
+  transform: translateX(-5px); /*Translada el elemento en el eje X*/
+}
+
+.btn-atras button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /*Color y tamaño de la sombra */
+  transform: translateY(-2px); /*Translada el elemento en el eje Y*/
+}
+
+
+
+/* Estilos responsivos para pantallas grandes */
+
+@media screen and (max-width: 768px) {
+
+  .tarjet {
+
+    min-width: 300px;
+    margin: 20px 0;
+
+  }
+
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+
+@media screen and (max-width: 480px) {
+
+  .tarjet {
+
+    min-width: 300px;
+
+  }
+
+}
+/* Estilo boton Visulizar votos */

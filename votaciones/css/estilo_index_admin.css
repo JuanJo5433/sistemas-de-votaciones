@@ -1,0 +1,106 @@
+/* Estilos globales para reiniciar valores por defecto en todos los elementos */
+* {
+    margin: 0; /* Establece el margen a 0 */
+    padding: 0; /* Establece el relleno a 0 */
+    box-sizing: border-box; /* Configura el modelo de caja para incluir el borde en el tamaño total */
+    text-decoration: none; /* Elimina la decoración de texto (subrayado por defecto) */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    margin: 0; /* Establece el margen del cuerpo a 0 */
+    font-family: sans-serif; /* Establece la fuente de texto a una fuente sans-serif genérica */
+    font-size: 15px; /* Establece el tamaño de fuente a 15 píxeles */
+    background-image: url("../img/fondo.jpg"); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo para ocupar toda la ventana gráfica */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    margin: 0; /* Establece el margen del contenedor a 0 */
+    position: absolute; /* Establece la posición absoluta para posicionar el contenedor */
+    top: 50%; /* Lo coloca en la mitad superior de la ventana gráfica */
+    left: 50%; /* Lo coloca en el centro horizontal de la ventana gráfica */
+    transform: translate(-50%, -50%); /* Centra el contenedor vertical y horizontalmente */
+    display: flex; /* Usa un diseño flexible */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios como columna */
+    align-items: center; /* Centra los elementos secundarios horizontalmente */
+}
+
+/* Estilos para los elementos con la clase 'menu' */
+.menu {
+    width: 500px; /* Establece un ancho fijo de 500 píxeles para los elementos .menu */
+    height: 100px; /* Establece la altura a 100 píxeles */
+    border: 1px solid; /* Agrega un borde de 1 píxel sólido */
+    background-color: rgb(245, 245, 245); /* Establece el color de fondo */
+    color: black; /* Establece el color del texto a negro */
+    margin: 30px; /* Agrega un margen exterior de 30 píxeles */
+    border-radius: 20px; /* Agrega un borde redondeado de 20 píxeles */
+    display: flex; /* Usa un diseño flexible */
+    align-items: center; /* Centra los elementos secundarios verticalmente */
+    padding: 0 20px; /* Establece el relleno interno de 0 píxeles arriba y abajo, 20 píxeles a los lados */
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0); /* Agrega una sombra interna */
+    outline: 1px solid; /* Agrega un contorno de 1 píxel sólido */
+    outline-color: rgba(0, 0, 0, 0.5); /* Establece el color del contorno */
+    outline-offset: 0px; /* Establece el desplazamiento del contorno a 0 píxeles */
+    text-shadow: none; /* Elimina la sombra de texto */
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); /* Agrega una transición animada */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar el ratón */
+    position: relative; /* Establece una posición relativa */
+}
+
+/* Estilos para el icono dentro de los elementos .menu */
+.menu i {
+    font-size: 32px; /* Establece el tamaño de fuente del icono a 32 píxeles */
+    margin-right: 20px; /* Agrega un margen a la derecha de 20 píxeles */
+}
+
+/* Estilos para el texto dentro de los elementos .menu */
+.menu span {
+    font-size: 32px; /* Establece el tamaño de fuente del texto a 32 píxeles */
+    flex: 1; /* Permite que el texto ocupe el espacio restante en el contenedor */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos cuando se pasa el ratón por encima de los elementos .menu */
+.menu:hover {
+    border: 1px solid; /* Establece un borde de 1 píxel sólido */
+    box-shadow: inset 0 0 20px rgba(129, 129, 129, 0.5), 0 0 20px rgb(50, 50, 50); /* Agrega una sombra */
+    outline-color: rgba(255, 0, 0, 0); /* Elimina el contorno */
+    outline-offset: 15px; /* Establece un desplazamiento del contorno de 15 píxeles */
+    text-shadow: 1px 1px 1px #3939394f; /* Agrega una sombra de texto */
+}
+
+/* Estilos para el icono dentro de los elementos .menu cuando se pasa el ratón por encima */
+.menu:hover i {
+    font-size: 38px; /* Aumenta el tamaño de fuente del icono a 38 píxeles */
+}
+
+/* Estilos para el botón 'boton_end' */
+.boton_end {
+    float: right; /* Hace que el botón flote a la derecha */
+    display: block; /* Establece el elemento como bloque */
+}
+
+/* Estilos para el botón 'cerrar-secion-btn' */
+#cerrar-secion-btn {
+    float: inline-end; /* Hace que el botón flote en línea con el texto circundante en la dirección de escritura actual (derecha en la mayoría de los casos) */
+    background-color: #30567b; /* Establece el color de fondo */
+    color: #fff; /* Establece el color del texto a blanco */
+    padding: 10px 20px; /* Establece el relleno interno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega un borde redondeado de 5 píxeles */
+    cursor: pointer; /* Cambia el cursor al puntero al pasar el ratón */
+    font-weight: bold; /* Establece el grosor del texto a negrita */
+    margin-top: 30px; /* Agrega un margen superior de 30 píxeles */
+    margin-right: 50px; /* Agrega un margen derecho de 50 píxeles */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 1px; /* Agrega espaciado entre letras */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+/* Estilos para el botón 'cerrar-secion-btn' cuando se pasa el ratón por encima */
+#cerrar-secion-btn:hover {
+    transform: scale(1.05); /* Realiza una escala del 105% en el botón al pasar el ratón por encima */
+}

@@ -1,0 +1,418 @@
+/* Selector universal */
+* {
+  /* Margen y relleno en 0 para eliminar espacios adicionales. */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 25px; /* Margen superior del cuerpo de la pagina. */
+  background-image: url("../img/fondo.jpg"); /* Imagen de fondo de la pagina. */
+}
+
+.container {
+  display: flex; /* Configurar el contenedor con flexbox, lo que permite alinearlos en columnas. */
+  margin-top: 90px; /* Margen superior del contenedor. */
+  margin-left: 5px; /* Margen izquierda del contenedor. */
+  flex-wrap: wrap; /* Permite que los elemntos se envuelvan si no caben en una sola fila. */
+  gap: 10px; /* Espacio entre los elementos. */
+  justify-content: center; /* Agregar el contenido en el centro. */
+  align-items: flex-start; /* Alinear los elementos en la parte superior del contenedor. */
+}
+
+/* Estilo tarjetas tipo votacion */
+
+.tarjet {
+  width: 30%; /* Ancho de las tarjetas. */
+  height: 220px; /* Alto de las tarjetas. */
+  padding: 10px; /* Relleno de las tarjetas. */
+  border: none; /* Elimina el borde de las tarjetas. */
+  background: rgba(255, 255, 255, 0.582);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 10px; /* redondear las tarjetas. */
+  margin: 10px; /* Agregar una margen alrededor. */
+  position: center; /* centrar el contenido. */
+  text-align: center; /* Centra el contenido horizontalmente. */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Crea una transformacion suave. */
+}
+
+.tarjet:hover {
+  transform: translateY(
+    -10px
+  ); /* Permite realizar una transformacion hacia arriba cuando el puntero pase por encima. */
+  background-image: linear-gradient(
+    45deg,
+    #e3dcff,
+    #dce3ff
+  ); /* Cambiar color de fondo, utilizando un degradado lineal. */
+}
+
+a {
+  text-decoration: none; /* Elimina la decoracion de los hipervinculos. */
+}
+
+.tarjet h2 {
+  /* Fuente del titulo, tamaño del mismo y estilos de texto */
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+/*Estilo documento y tipo de documento*/
+
+p {
+  
+  font-size: 25px; /* Tamaño de fuente. */
+  text-align: center; /* Alinear texto al centro. */
+  letter-spacing: 4px; /* Espacio entre caracteres. */
+}
+
+/*Estilo boton ingresar*/
+
+.btn-gradient {
+  margin-top: 100px; /* Margen superior del boton ingresar. */
+  padding: 10px 30px; /* Relleno del boton ingresar. */
+  background: linear-gradient(
+    45deg,
+    #607d8b,
+    #9e9e9e
+  ); /* Color degradado del boton ingresar. */
+  color: #ffffff; /* Color fuente. */
+  border-radius: 5px; /* Redondear boton de ingresar. */
+  font-weight: bold; /* Grosor de fuente. */
+  border: none; /* Elimina el borde del boton ingresar. */
+  cursor: pointer; /* Mostrar puntero en forma de mano. */
+  text-transform: uppercase; /* Convertir la fuente en mayuscula. */
+  letter-spacing: 1px; /* Espacio entre caracteres. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Crear sombra detras del boton. */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Crea una transformacion suave. */
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(
+    45deg,
+    #9e9e9e,
+    #607d8b
+  ); /* Invertir los colores de fondo del boton ingresar cuando el cursor pase por encima. */
+  transform: scale(
+    1.05
+  ); /* Hacer zoom al boton cuando el cursor pase por encima. */
+}
+
+/*Estilo boton cerrar secion*/
+
+.boton_end,
+.boton_atras {
+  float: right; /* Mover el boton a la derecha de la pagina. */
+  display: block; /* Utilizar todo el espacio disponible. */
+}
+
+#cerrar-secion-btn {
+  background-color: #30567b; /* Color de fondo del boton cerrar sesion. */
+}
+
+
+#atras-btn {
+  background-color: rgb(81, 127, 174); /* Color de fondo del boton cerrar sesion. */
+}
+#cerrar-secion-btn,
+#atras-btn {
+  float: inline-end; /* Permite poner el elemento en horizontal. */
+
+  color: #fff; /* Color de fuente. */
+  padding: 10px 20px; /* Relleno del boton cerrar sesion. */
+  border: none; /* Elimina el borde del boton cerrar sesion. */
+  border-radius: 5px; /* Redondea el border del boton cerrar sesion. */
+  cursor: pointer; /* Mostrar puntero en forma de mano. */
+  /* position: relative;*/
+  font-weight: bold; /* Grosor de fuente. */
+  margin-top: -30px; /* Margen superior del boton cerrar sesion. */
+  margin-right: 50px; /* Margen hacia la derecha del boton cerrar sesion. */
+  text-transform: uppercase; /* Convertir la fuente en mayuscula. */
+  letter-spacing: 1px; /* Espacio entre caracteres. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Crear sombra detras del boton. */
+}
+
+
+#cerrar-secion-btn:hover,
+#atras-btn:hover {
+  transform: scale(
+    1.05
+  ); /* Hacer zoom al boton cuando el cursor pase por encima. */
+}
+
+/* Estilo boton actualizar. */  
+.container h2{
+  padding: 10px; /*Relleno exterior del elemento*/
+  text-align: center; /*Alinea el texto en el centro*/
+  margin-top: 0; /*  */
+}
+
+.btn-actualizar button {
+  --primary-color: #645bff; /* Color primario del boton. */
+  --secondary-color: #fff; /* Color secundario del boton. */
+  --hover-color: #111; /* Color del boton cuando el cursor le pase por encima. */
+  --arrow-width: 10px; /* Ancho de la flecha. */
+  --arrow-stroke: 2px; /* Grosor del borde de la flecha. */
+  box-sizing: border-box; /* Modo de calculo del ancho y alto del boton. */
+  border: 0; /* Elimina el borde del boton. */ 
+  border-radius: 20px; /* Establece esquinas redondeadas. */
+  color: var(--secondary-color); /* Color del texto del boton. */
+  padding: 1em 1.8em; /* Relleno del boton. */
+  background: var(--primary-color); /* Color de fondo. */
+  display: flex; /* Permite que se muestre como un elemento flexbox */
+  transition: 0.2s background; /* Establece un transicion de 0.2 segundo para el color de fondo. */
+  align-items: center; /* Se alinea el texto del boton al centro. */
+  gap: 0.6em; /* Espacio entre los elementos del boton. */
+  font-weight: bold; /* Texto en negrita. */
+  position: absolute; /* Posicion del boton absoluta. */
+  bottom: 97px; /* Posicion inferior del boton. */
+  margin-left: 46%; /* Margen izquierda del boton. */
+  height: 3em; /*Alto del boton*/
+}
+
+.btn-actualizar button .arrow-wrapper {
+  display: flex;  /* Permite que se muestre como un elemento flexbox */
+  justify-content: center;
+  align-items: center; /* Alinea texto al centro. */
+}
+
+.btn-actualizar button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-actualizar button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.btn-actualizar button:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-actualizar button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.btn-actualizar button:hover .arrow:before {
+  right: 0;
+}
+
+/*Responsive para pantallas grandes*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjet {
+    width: 70%;
+    margin: 10px 0;
+  }
+
+  #cerrar-secion-btn {
+    margin-top: 20px;
+  }
+
+  #atras-btn {
+    margin-top: 20px;
+  }
+
+ 
+}
+
+/*Responsive para pantallas pequeñas*/
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 60px;
+  }
+
+  .tarjet {
+    width: 70%;
+    height: auto;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  #cerrar-secion-btn {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #atras-btn {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  
+}
+
+
+
+
+
+
+/* Estilo botón Visualizar */
+.btn-visualizar button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  margin-top: -30px;
+  
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  position: absolute;
+
+  margin-left: 1%;
+  height: 3em; /* Alto del botón */
+}
+
+.btn-visualizar button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-visualizar button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-visualizar button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.btn-visualizar button:hover {
+  background-color: var(--hover-color);
+}
+
+.btn-visualizar button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.btn-visualizar button:hover .arrow:before {
+  right: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #cerrar-secion-btn {
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    margin-top: -30px;
+    
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    position: absolute;
+  
+    margin-left: 1%;
+    height: 3em; /* Alto del botón */
+  }
+  .boton_atras button{
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    margin-top: -30px;
+    
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    position: absolute;
+  
+    margin-left: 1%;
+    height: 3em; /* Alto del botón */
+  }
+}
+/* Estilo para la barra de menú */
+.menu-bar {
+  background: #ffffff00; /* Color de fondo de la barra de menú */
+  display: flex;
+
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center;
+  padding: 10px; /* Espacio interior */
+  margin-top: 1 0px;
+
+
+}
+
+/* Estilo para los botones en la barra de menú */
+.menu-bar a {
+  margin-right: 10px;
+  background-color: #111;
+  text-decoration: none;
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Relleno de los botones */
+  border-radius: 5px; /* Bordes redondeados de los botones */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.menu-bar a:hover {
+  color: #000000;
+  background-color: #ffffff; /* Cambio de color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* Estilo para hacer la barra de menú responsive */
+@media screen and (max-width: 1300px) {
+ 
+
+  .menu-bar a {
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+}

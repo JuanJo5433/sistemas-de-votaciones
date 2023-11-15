@@ -1,0 +1,197 @@
+* {
+
+    box-sizing: border-box; /* Ancho y alto total de la pagina. */
+
+}
+
+body {
+
+    margin: 0; /* margen para los cuatro lados. */
+    font-family: sans-serif;  /* Tipo de fuente. */
+    font-size: 15px; /* Tamaño de fuente. */
+    background-image: url("../img/fondo.jpg"); /* Imagen de fondo. */
+    background-size: cover; /* tamaño del fondo. */
+ 
+}
+
+
+/* Estilo del formulario */
+
+.form-container {
+
+    width: 500px; /* Ancho del container. */
+    max-width: 100%; /* Ancho maximo del container. */
+    margin: auto; /* Centra los elementos. */
+    margin-top: 20px; /* Espacio superior del container. */
+    margin-bottom: 20px; /* Espacio inferior. */
+    padding: 20px; /* Area de relleno. */
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); /* Crear sombra detras del formulario. */
+    position: relative; /* Posiciona el elemento relativo a si mismo. */
+    background-color: #f4f4f4; /* Color de fondo del formulario */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+
+}
+
+
+/* Estilo del titulo del formulario */
+
+.form-container h1 {
+
+    text-align: center; /* Alinear titulo al centro. */
+    margin-top: 0; /* Margen superior. */
+    font-size: 20px; /* Tamaño de fuente. */
+    
+}
+
+
+/* Estilo de los campos del formulario */
+
+.formulario label, .formulario input[type="text"], .formulario input[type="email"], .formulario input[type="password"], .formulario select {
+
+    display: block; /* Ocupa el espacio disponible por defecto. */
+    width: 100%; /* Ancho del formulario. */
+    font-size: 15px; /* Tamaño de fuente. */
+    margin-bottom: 15px; /* Margen inferior. */
+    border-radius: 30px; /* redondea los bordes de los campos. */
+    
+}
+
+
+
+
+.formulario input[type="radio"]{
+   
+    display: inline-flex; /* Colocoar las cajas como si fueran celdas de tablas. */
+    font-size: 100px; /* Tamaño de fuente. */
+    margin-bottom: 20px; /* Margen inferior. */
+
+}
+
+
+
+.formulario input, .formulario select {
+
+    padding: 5px; /* Area de relleno. */
+    background: rgba(0, 0, 0, 0.1); /* Color de fondo. */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Tamaño, estilo y color del borde. */
+
+}
+
+
+.formulario select option:hover {
+
+    background-color: #3e4042; /* Color de fondo. */
+
+}
+
+
+/* Estilo de los titulos de cada cada campo */
+
+.texto_label {
+
+    display: inline-block; /* Establecer que un elemento ocupara el espacio del contenido del mismo y el siguiente elemento se posiciona a la derecha. */
+    text-align: center; /* Alinear el texto al centro. */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+
+
+.texto_label_genero {
+
+    display: inline-block; /* Establecer que un elemento ocupara el espacio del contenido del mismo y el siguiente elemento se posiciona a la derecha. */
+    font-weight: bold; /* Texto en negrita para las etiquetas. */
+
+}
+
+
+.checkbox-container {
+
+    margin-top: 10px; /* Margen superior. */
+    
+}
+
+
+/* Estilo Botones */
+
+.botones {
+
+    display: flex; /* Permite que sea flexible para trabajar. */
+    justify-content: space-between; /* distribuye el espacio entre y alrededor de los items flex. */
+    margin-top: 10px; /* Margen superior. */
+    padding: 0 20px; /* Añade un poco de espacio horizontal para separar los botones. */
+
+}
+
+
+.btn-login {
+
+    width: 100%; /* Ancho del boton. */
+    padding: 10px; /* Espacio de relleno del boton. */
+    background-color: #ffffff; /* Color de fondo del botón de envío */
+    color: #000000; /* Color del texto del botón de envío */
+    border: none; /* Eliminar bordes. */
+    cursor: pointer; /* Mostrar puntero en forma de mano. */
+    margin-top: 10px; /* Margen superior. */
+    border-radius: 30px; /* Redondeo del boton. */
+    font-weight: bold; /* Grosor de la fuente. */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Tamaño, estilo y color del borde del boton. */
+    
+}
+
+
+input[type="submit"] {
+
+    width: 100%; /* Ancho del boton de envio. */
+    padding: 10px; /* Espacio de relleno del boton. */
+    background-color: #7e7e7e; /* Color de fondo del botón de envío */
+    color: #fff; /* Color del texto del botón de envío */
+    border: none; /* Eliminar bordes. */
+    cursor: pointer; /* Mostrar puntero en forma de mano. */
+    margin-top: 10px; /* Margen superior. */
+    border-radius: 30px; /* Redondeo del boton de envio. */
+    margin-right: 20px; /* Margen derecha del boton. */
+    font-weight: bold; /* Grosor de la fuente. */
+  
+}
+
+
+input[type="submit"]:hover {
+
+    background-color: #5c5c5c; /* Cambio de color al pasar el ratón sobre el botón */
+
+}
+
+
+.btn-login:hover {
+
+    background-color: #d1d1d1; /* Color de fondo cuando el cursor pase por encima del boton. */
+
+}
+
+
+/* Estilo para el ícono del ojo */
+
+.field-icon {
+
+    position: absolute; /*Se pocisiona respecto al contenedor mas cercano*/
+    top: 50%; /*posicion superior del elemento*/
+    right: 10px; /*Pocision en la parte derecha del elemento*/
+    transform: translateY(-50%); /*Translada a profundidad el elemento en eje Y*/
+    cursor: pointer; /*Cambia de forma cada vez que el mouse pase*/
+
+}
+
+
+/* Estilo para el campo de contraseña */
+
+.password-container {
+
+    position: relative; /*El elemento es relativo a si mismo*/
+    
+}   
+.texto_label_pswd{
+    color: rgba(0, 0, 0, 0.34);
+    display: inline-block; /* Establecer que un elemento ocupara el espacio del contenido del mismo y el siguiente elemento se posiciona a la derecha. */
+    text-align: center; /* Alinear el texto al centro. */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}

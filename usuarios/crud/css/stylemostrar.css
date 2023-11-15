@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* Establece márgenes y relleno en 0 y elimina la decoración de texto para todos los elementos. */
+}
+
+body {
+    margin: 0;
+    background-image: url('../img/fondo.jpg'); /* Establece una imagen de fondo. */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo. */
+}
+
+h1 {
+    font: bold; /* Fuente en negrita. */
+    margin: auto; /* Margen automático para centrar horizontalmente. */
+    padding: 5vw; /* Relleno con 5vw (el 5% del ancho de la ventana). */
+    text-align: center; /* Texto centrado. */
+    font-family: sans-serif; /* Tipo de fuente. */
+    font-size: 30px; /* Tamaño de fuente. */
+    color: rgb(5, 5, 5); /* Color de texto en RGB. */
+}
+
+.form {
+    margin: 100px; /* Márgenes de 100 píxeles. */
+    display: flex; /* Usa un diseño flexible (flexbox). */
+    margin-top: 30px; /* Márgen superior de 30 píxeles. */
+    flex-wrap: wrap; /* Envuelve los elementos en la dirección contraria al flujo. */
+    gap: 50px; /* Espacio entre elementos de 50 píxeles. */
+    justify-content: center; /* Centra horizontalmente. */
+    align-items: flex-start; /* Alinea verticalmente hacia arriba. */
+}
+
+.container {
+    background-color: #e4e4e4bb; /* Color de fondo con transparencia. */
+    box-sizing: border-box; /* Tamaño de caja con borde. */
+    padding: 10px; /* Relleno de 10 píxeles. */
+    width: 500px; /* Ancho de 500 píxeles. */
+    margin: auto; /* Margen automático para centrar horizontalmente. */
+    display: flex; /* Usa un diseño flexible (flexbox). */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él. */
+    border: 1px solid #000000; /* Borde de 1 píxel sólido con color negro. */
+    border-radius: 20px; /* Borde redondeado de 20 píxeles. */
+    transition: .5s; /* Transición en 0.5 segundos. */
+}
+
+.container:hover {
+    transform: scale(1.1); /* Escala al 110% al pasar el mouse. */
+    box-shadow: 0 0 15px #454646; /* Sombra del contenedor al pasar el mouse. */
+    /*transform: scale(.9);*/
+}
+
+#image {
+    display: flex;
+    width: 15%; /* Ancho del 15%. */
+    height: 10%; /* Altura del 10%. */
+}
+
+.boton {
+    text-decoration: none; /* Sin decoración de texto. */
+    color: #000000; /* Color de texto negro. */
+    font-family: sans-serif; /* Tipo de fuente. */
+    font-size: 20px; /* Tamaño de fuente. */
+    padding: 10px; /* Relleno de 10 píxeles. */
+    margin: 10px; /* Márgenes de 10 píxeles. */
+}
+
+.boton_atras {
+    float: right; /* Flotar a la derecha. */
+    display: block; /* Mostrar como bloque. */
+}
+
+#atras-btn {
+    float: inline-end; /* Flotar al extremo inline. */
+    background-color: #30567b; /* Color de fondo. */
+    color: #fff; /* Color de texto blanco. */
+    padding: 10px 20px; /* Relleno de 10 píxeles arriba y abajo, 20 píxeles izquierda y derecha. */
+    border: none; /* Sin borde. */
+    border-radius: 5px; /* Borde redondeado de 5 píxeles. */
+    cursor: pointer; /* Cambio del cursor al pasar sobre él. */
+    font-weight: bold; /* Texto en negrita. */
+    margin-top: 30px; /* Márgen superior de 30 píxeles. */
+    margin-right: 50px; /* Márgen derecho de 50 píxeles. */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas. */
+    letter-spacing: 1px; /* Espaciado entre letras de 1 píxel. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra con opacidad. */
+}
+
+#atras-btn:hover {
+    transform: scale(1.05); /* Escala al 105% al pasar el mouse. */
+}

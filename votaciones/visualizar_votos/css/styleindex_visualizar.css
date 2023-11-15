@@ -1,0 +1,118 @@
+/* Establece los margenes y rellenos a 0 y quita la decoración de texto para todos los elementos */
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+/* Configura la imagen de fondo para el cuerpo del documento */
+body{
+    background-image: url('../../img/fondo.jpg');
+    background-size: cover;
+}
+
+/* Estilo para el encabezado h1 */
+h1{
+    font-family: sans-serif; /* Fuente del texto */
+    color: #000; /* Color del texto */
+    font-size: 31px; /* Tamaño de fuente */
+    text-align: center; /* Alineación del texto al centro */
+    margin :auto; /* Margen izquierdo y derecho automático para centrar */
+    padding: 15px; /* Relleno interno */
+    margin-top: 60px; /* Margen superior */
+}
+
+/* Estilo del botón "Atrás" */
+.btn-atras button {
+    display: flex; /* Permite que el botón sea flexible */
+    height: 4em; /* Alto del botón */
+    width: 150px; /* Ancho del botón */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #eeeeee4b; /* Color de fondo del botón */
+    border-radius: 20px; /* Redondea las esquinas del botón */
+    letter-spacing: 1px; /* Espacio entre las letras */
+    transition: all 0.2s linear; /* Animación al cambiar propiedades */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border: none; /* Sin borde */
+    background: #bfbaba; /* Color de fondo */
+    bottom: 93%; /* Coloca el botón en la parte inferior */
+    position: absolute; /* Posición absoluta */
+    margin-left: 90%; /* Margen izquierdo */
+}
+
+/* Estilo para enlaces */
+a {
+    text-decoration: none; /* Quita la decoración de los enlaces */
+}
+
+/* Estilo para el icono dentro del botón "Atrás" */
+.btn-atras button > svg {
+    margin-right: 5px; /* Margen derecho del icono */
+    margin-left: 5px; /* Margen izquierdo del icono */
+    font-size: 10px; /* Tamaño de fuente del icono */
+    transition: all 0.4s ease-in; /* Animación al cambiar propiedades */
+}
+
+/* Estilo del icono en el botón "Atrás" al pasar el ratón */
+.btn-atras button:hover > svg {
+    font-size: 5.2em; /* Tamaño de fuente del icono al pasar el ratón */
+    transform: translateX(-5px); /* Desplaza el icono horizontalmente */
+}
+
+/* Estilo del botón "Atrás" al pasar el ratón */
+.btn-atras button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /* Sombra y color al pasar el ratón */
+    transform: translateY(-2px); /* Desplaza el botón verticalmente */
+}
+
+/* Estilo para el contenedor de las tarjetas */
+.card-container {
+    display: flex; /* Muestra las tarjetas en línea horizontal */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Distribución del espacio entre las tarjetas */
+    margin: 20px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo de las tarjetas */
+.card {
+    width: 190px; /* Ancho de la tarjeta */
+    background-color: #ededed; /* Color de fondo de la tarjeta */
+    border: 1px solid rgba(0, 0, 0, 0.256); /* Borde de la tarjeta */
+    height: 260px; /* Alto de la tarjeta */
+    border-radius: 6px; /* Borde redondeado */
+    margin: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo de la imagen en la tarjeta */
+.card-image {
+    background-color: rgb(255, 255, 255); /* Color de fondo de la imagen */
+    width: 100%; /* Ancho de la imagen */
+    height: 200px; /* Alto de la imagen */
+    border-radius: 6px 6px 0 0; /* Borde redondeado solo en la parte superior */
+}
+
+/* Estilo de la imagen en la tarjeta al pasar el ratón */
+.card-image:hover {
+    transform: scale(0.98); /* Escala la imagen ligeramente */
+}
+
+/* Estilo de la imagen dentro de la tarjeta */
+.card-image img {
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    width: 100%; /* Ancho de la imagen */
+    height: 95%; /* Alto de la imagen */
+}
+
+/* Estilo del encabezado de la tarjeta */
+.heading {
+    text-align: center; /* Alineación del texto al centro */
+    font-weight: 600; /* Grosor de la fuente */
+    color: rgb(88, 87, 87); /* Color del texto */
+    padding: 7px; /* Relleno interno */
+}
+
+/* Estilo del encabezado de la tarjeta al pasar el ratón */
+.heading:hover {
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}

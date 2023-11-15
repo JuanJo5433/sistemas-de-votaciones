@@ -1,0 +1,155 @@
+* {
+
+    box-sizing: border-box; /* Ancho y alto total de la pagina. */
+
+}
+
+
+body {
+
+    margin: 0; /* margen para los cuatro lados. */
+    font-family: sans-serif; /* tipo de letra. */
+    font-size: 15px; /* tamaño de letra. */
+    background-image: url("../../img/fondo.jpg"); /* Imagen de Fondo de la pagina. */
+    background-size: cover; /* tamaño del fondo. */
+ 
+}
+
+
+/*cuadro que contiene el formulario*/
+
+.form-container {
+
+    width: 600px; /* Ancho del container. */
+    max-width: 100%; /* Ancho maximo del container. */
+    margin: auto; /* Centra los elementos. */
+    margin-top: 20px; /* Espacio superior del container. */
+    margin-bottom: 20px; /* Espacio inferior. */
+    padding: 20px; /* Area de relleno. */
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3); /* Color del sombreado del container. */
+    position: relative; /* Posiciona el elemento relativo a si mismo. */
+    background-color: #f4f4f4; /* Color de fondo del formulario. */
+    overflow-y: hidden; /* Oculta la barra de desplazamiento vertical. */
+
+}
+
+
+/*Estilo al titulo del formulario*/
+
+.form-container h1{
+
+    text-align: center; /* Alinear el texto en el centro. */
+    margin-top: 0; /* Espacio superior entre el texto y el recuadro. */
+
+}
+
+
+/* Cada uno de los campos de informacion */
+
+.formulario label, .formulario input[type="text"], .formulario input[type="email"], .formulario input[type="file"], .formulario select {
+
+    display: block; /* Ocupa el espacio disponible por defecto. */
+    width: 100%; /* Ancho del formulario. */
+    font-size: 1.3em; /* Tamaño de la letra. */
+    margin-bottom: 15px; /* Espacio de la parte inferior de los campos. */
+    border-radius: 30px; /* redondea los bordes de los campos. */
+    
+}
+
+
+/* estilo a los campos del formulario */
+
+.formulario input, .formulario select {
+
+    padding: 10px; /* Espacio del relleno del formulario. */
+    background: rgba(0, 0, 0, 0.1); /* Color del fondo del formulario. */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Color del borde del formulario. */
+
+}
+
+
+/* efecto cada que pase el mouse */
+
+.formulario select option:hover{
+
+    background-color: #3a3b3d; /* Color del efecto cada que pasa el mouse. */
+
+}
+
+
+/* estilo a los titulos de los campos del formulario */
+
+.texto_label {
+
+    display: inline-block; /* Ocupa el tamaño requerido. */
+    text-align: center; /* Alinear el texto en el centro. */
+    font-weight: bold; /* Texto en negrita para las etiquetas. */
+
+}
+
+/* Estilo a los botones de la interfaz */
+
+.boton{
+
+    display: flex; /* Permite que sea flexible para trabajar. */
+    padding: 0px 30px; /* Relleno en los bordes. */
+    justify-content: space-between; /* Distribuye el espacio entre los botones. */
+    width: 50%; /* Ancho del boton. */
+    box-sizing: border-box; /* Ancho y alto total de los botones. */
+    
+}
+
+
+/* Estilo a los botones */
+
+.btn{
+
+    padding: 8px 15px; /* relleno de los espacios de los botones. */
+    border-radius: 20px; /* Redondea las esquinas del boton. */
+    margin-top: 15px; /* Espacio superior del boton. */
+    color:rgb(255, 255, 255); /* Color de la letra del boton. */
+    font-family: sans-serif; /* Tipo de letra del boton. */
+    text-transform: uppercase; /* convierte el texto a mayusculas. */
+    text-align: center; /* Alinear el texto en el centro del boton. */
+    text-decoration: none; /* Elimina la linea inferior azul. */
+    cursor: pointer; /* Forma del cursor al pasar el mouse. */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* color del borde del boton. */
+
+}
+
+
+/* Color de fondo del boton */
+
+.agregar-btn {
+
+    background-color: #1a829a; /* Color del fondo del boton. */
+
+}
+
+
+/* Efecto cada que pasa el mouse */
+
+.agregar-btn:hover {
+
+    background-color: #7e7e7e;  /* Color del efecto cada que el mouse pase. */
+
+}
+
+
+/* Color de fondo del boton y espacio hacia la derecha */
+
+.cancelar-btn {
+
+    margin-left: 22em; /* Posiciona el boton en la parte derecha. */
+    background-color: #1e1f44e7; /* Color del fondo del boton. */
+
+}
+
+
+/* Efecto cada que pasa el mouse */
+
+.cancelar-btn:hover {
+
+    background-color: #545355; /* Color del efecto cada que el mouse pase. */
+    
+}

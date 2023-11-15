@@ -1,0 +1,160 @@
+/* Agrega tu estilo CSS aquí */
+* {
+  margin: 0; /*Margen de la pagina*/
+  padding: 0; /*Relleno de la pagina */
+}
+
+body {
+  font-family: sans-serif; /*Tipo de letra*/
+  font-size: 15px; /*Tamaño de la letra*/
+  margin: 0; /*Margen de la pagina*/
+  background-image: url('../img/fondo.jpg'); /*Imagen del fondo*/
+  background-size: cover; /*Ajusta el tamaño de la imagen*/
+}
+
+.container {
+  display: flex; /*Permite que el elemento sea flexible*/
+  flex-wrap: wrap; /*COntrola la direccion de los elementos*/
+  gap: 10px; /*Tamaño de filas y columnas*/
+  justify-content: center; /*Ajusta los elementos en el centro*/
+  align-items: center; /*Alinea los elementos al centro*/
+  text-align: center; /*Alinea el texto en el centro*/
+}
+
+.imagen{
+  
+  width: 92%; /*Ancho de la imagen*/
+  height: 100%; /*Alto de la imagen*/
+}
+.tarjet {
+  min-width: 300px;/*Minimo ancho de la tarjeta*/
+  min-height: 400px; /*Minimo alto de la tarjeta*/
+  width: 300px; /*Ancho de la tarjeta*/
+  height: 400px; /*Alto de la tarjeta*/
+  padding: 10px; /*Relleno exterior de la tarjeta*/
+  border: none; /*Borde de la targeta*/
+  background: rgba(255, 255, 255, .3); /*Color del fondo*/
+  -webkit-backdrop-filter: blur(5px); /*da brillo a la tarjeta*/
+  backdrop-filter: blur(5px); /*Efecto grafico como desenfoque o combio de color*/
+  border: 1.5px solid rgba(209, 213, 219, 0.3); /*Tamaño y color del borde*/
+  border-radius: 10px; /*Redondea las esquinas*/
+  margin-top: 100px; /*Espacio superior de la tarjeta*/
+}
+
+
+
+
+.boton {
+  text-decoration: none; /*Elimina la linea de subrayado*/
+  color: #000000; /*Color e la letra*/
+  font-family: sans-serif; /*Tipo de letra*/
+  font-size: 20px; /*Tamaño de la letra*/
+  padding: 10px; /*Relleno exterior del boton*/
+  margin: 10px; /*Margen del boton*/
+}
+
+.boton_atras {
+
+  float: right; /* Colocar al Lado Derecho de su contenedor. */
+  display: block;/* Utializ todo el ancho de su contenedor.  */
+
+}
+
+#atras-btn {
+
+  float: right; /* Colocar al Lado Derecho de su contenedor. */
+  background-color: #000000; /* Color de fondo. */
+  color: #fff; /* Color de fuente. */
+  padding: 10px 20px; /* Relleno del Boton. */
+  border: none; /* Eliminar Borde del boton. */
+  border-radius: 5px; /* Agregar esquinas redondeadas. */
+  cursor: pointer; /* Cursor en forma de mano cuando este pase por encima. */
+  font-weight: bold; /* Grosor de la fuente */
+  margin-top: 30px; /* Agregar margen a la parte superior del boton. */
+  margin-right: 50px; /* Agregar margen a la derecha del boton. */
+  text-transform: uppercase; /* Convertir el texto a Mayusculas. */
+  letter-spacing: 1px; /* Espacio entre las letras. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra paralela al boton. */
+}
+
+#atras-btn:hover {
+
+  transform: scale(1.05); /* Aumenta el tamaño del boton cuando el usuario pase el cursor por encima. */
+  font-size: 18px; /* Tamaño de fuente. */
+  text-align: center; /* Alinea el texto del boton al centro. */
+}
+
+.botones {
+  display: flex; /* Establece en modo de visualizacion flexible. */
+  flex-direction: column; /* Flujo en columna, para que se apilen uno encima del otro. */
+  align-items: center; /* Alinea el texto del boton al centro. */
+  margin-top: -110px; /* Margen negativa a la parte superior. */
+}
+
+.btn-gradient {
+
+  display: flex; /* Establece en modo de visualizacion flexible. */
+  padding: 10px 30px; /*  Relleno del boton. */
+  background: linear-gradient(45deg, #607D8B, #9E9E9E); /* Establece un degradado de color lineal para el fondo del botón. */
+  color: #FFFFFF; /* Color del texto. */
+  border-radius: 5px; /* Agregar esquinas redondeadas al boton. */
+  font-weight: bold; /* Grosor de la fuente. */
+  border: none; /* Eliminar bordes al boton. */
+  cursor: pointer; /* Cursor en forma de mano cuando este pase por encima. */
+  text-transform: uppercase; /* Convertir el texto a Mayusculas. */
+  letter-spacing: 1px; /* Espacio entre letras. */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra paralela al boton. */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Agrega transicion suave al color de fondo y a la trasformacion del boton. */
+  margin-top: 10px; /* Agregar margen superior del boton. */
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(45deg, #9E9E9E, #607D8B);  /* Establece un degradado de color lineal para el fondo del botón cuando el cursor le pasa por encima. */ 
+  transform: scale(1.05); /* Aumenta el tamaño del boton cuando el usuario pase el cursor por encima. */
+}
+/* Estilo boton de retroceso */
+
+
+.btn-atras button {
+  display: flex; /*Permite que sea flexible*/
+  height: 3em; /*Alto del boton*/
+  width: 100px; /*Ancho del boton*/
+  align-items: center; /*Permite centrar el elemento*/
+  justify-content: center; /*Alinea en el centro*/
+  background-color: #eeeeee4b; /*Color del fondo del boton*/
+  border-radius: 20px; /*Redondea las esquinas del boton*/
+  letter-spacing: 1px; /*Cantidad de espacio entre las letrass*/
+  transition: all 0.2s linear; /*Permte realizar animacion*/
+  cursor: pointer; /*Cambia cada vez que el mouse pasa*/
+  border: none; /*Borde del boton*/
+  background: #bfbaba; /*Color de fondo*/
+  bottom: 93%; /* Agregar posicion inferior del boton. */
+  position: absolute; /* Se establece en posicion absoluta. */
+  margin-left: 90%; /* Establece el margen izquierdo del elemento. */
+  
+
+}
+
+a {
+  text-decoration: none; /* Eliminar todos los estilos de decoracion.  */
+}
+
+
+.btn-atras button > svg {
+
+  margin-right: 5px; /*Margen de la parte derecha del boton*/
+  margin-left: 5px; /*Margen de la parte izquierda del boton*/
+  font-size: 10px; /*Tamaño de la letra*/
+  transition: all 0.4s ease-in; /*Permite realizar animacion*/
+}
+
+.btn-atras button:hover > svg {
+  font-size: 5.2em; /*Tamaño de la letra*/
+  transform: translateX(-5px); /*Translada el elemento en el eje X*/
+}
+
+.btn-atras button:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /*Color y tamaño de la sombra */
+  transform: translateY(-2px); /*Translada el elemento en el eje Y*/
+}
+

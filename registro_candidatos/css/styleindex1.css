@@ -1,0 +1,135 @@
+*{
+    margin:0; /*Margen de la pagina*/
+    padding: 0; /*Relleno de la pagina*/
+    text-decoration: none; /*Elimina el subrayedo de los links*/
+}
+body{
+    margin:0; /*Margen del body*/
+    background-image: url('../img/fondo.jpg'); /*Imagen del fondo*/
+    background-size: cover; /*Ajusta el tamaño del fondo*/
+}
+h1{
+    font: bold; /*Letra en negrita*/
+    margin: auto; /*Margen de la letra*/
+    padding: 5vw; /*Relleno de la letra*/
+    text-align: center; /*Alinea el texto en el centro*/
+    font-family:sans-serif; /*Tipo de  letra*/
+    font-size: 30px; /*Tamaño de la letra*/
+    color:rgb(5, 5, 5); /*Color de la letra*/
+}
+.form{
+    
+    margin: 100px; /*Margen del formulario*/
+    display: flex; /*Permite que sea flexible a los cambios*/
+    margin-top: 30px; /*Espacio superior*/
+    
+    flex-wrap: wrap; /*Ajusta elementos en una sola linea*/
+    gap: 50px; /*Tamaño de las filas y columnas*/
+    justify-content: center; /*Centra el elemento*/
+    align-items: flex-start;  /* Alinea los items al inicio del elemento*/
+}
+.container{
+    background-color: #e4e4e4bb; /* Color del fondo*/
+    box-sizing: border-box; /*Ajusta el elemento al ancho y alto */
+    padding: 10px; /* Relleno del elemento*/
+    width: 500px; /*Ancho del elemento */
+    margin: auto; /*Margen del elemento */
+    display: flex; /*Permite que sea flexible a los cambios */
+    cursor: pointer; /* Cambia el cursor cada que pasa sobre el*/
+    border: 1px solid #000000; /*Color y tamaño del border */
+    border-radius: 20px; /* Redondea las puntas del elemento*/
+    transition: .5s; /* Permite crear animacion*/
+}
+.container:hover{
+    transform: scale(1.1); /* Permite crear un efecto zoom*/
+    box-shadow: 0 0 15px #454646; /*Tamaño y color de la sombra */
+    /*transform: scale(.9);*/
+}
+#image{
+    display: flex; /*Permite que sea flexible a los cambios */
+    width: 15%; /*Ancho de la imagen */
+    height: 10%; /*Alto de la imagen */
+}
+.boton{
+    text-decoration: none; /* Elimina el subrayado del link*/
+    color:#000000; /* Color del texto*/
+    font-family: sans-serif; /* Tipo de fuente*/
+    font-size: 20px; /* Tamaño de la letra*/
+    padding: 10px; /*Espacio de relleno */
+    margin:10px; /* Margen del boton*/
+}
+
+
+
+.boton_atras {
+    position: absolute; /*Posiciona automaticamente en el punto de inicio */
+    top: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+}
+
+#atras-btn {
+    background-color: #30567b; /* Color de fondo. */
+    color: #fff; /* Color del texto.*/
+    padding: 10px 20px; /*Espacio de relleno en la parte superior en inferior . */
+    border: none; /* Elimina el borde del botón.*/
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón. */
+    cursor: pointer; /*Cursor en forma de mano, cuando el mismo pase por encima. */
+    font-weight: bold; /* Grosor del texto. */
+    text-transform: uppercase; /*Transforma la letra a mayuscula Convierte el texto a mayuscula. */
+    letter-spacing: 1px; /* Espacio entre las letras. Espaco entre las letras*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra paralela al botón. */
+}
+
+#atras-btn:hover {
+    
+    transform: scale(1.05); /* Realiza una transformación cuando el cursor pase por encima. Permite generar efecto zoom*/
+}
+
+/* Estilo boton de retroceso */
+
+
+.btn-atras button {
+    display: flex; /*Permite que sea flexible*/
+    height: 4em; /*Alto del botón*/
+    width: 150px; /*Ancho del boton*/
+    align-items: center; /*Permite centrar el elemento*/
+    justify-content: center; /*Alinea en el centro*/
+    background-color: #eeeeee4b; /*Color del fondo del boton*/
+    border-radius: 20px; /*Redondea las esquinas del boton*/
+    letter-spacing: 1px; /*Cantidad de espacio entre las letrass*/
+    transition: all 0.2s linear; /*Permte realizar animacion*/
+    cursor: pointer; /*Cambia cada vez que el mouse pasa*/
+    border: none; /*Borde del boton*/
+    background: #bfbaba; /*Color de fondo*/
+    bottom: 93%; /* Establece la posicion del borde inferior*/
+    position: absolute; /* Establece la posicion del boton como absoluta.*/
+    margin-left: 90%; /* Establece el margen izquierdo del boton.*/
+    
+  
+}
+  
+a {
+
+    text-decoration: none; /*Elimina el subrayado de link*/
+}
+  
+  
+.btn-atras button > svg {
+  
+    margin-right: 5px; /*Margen de la parte derecha del boton*/
+    margin-left: 5px; /*Margen de la parte izquierda del boton*/
+    font-size: 10px; /*Tamaño de la letra*/
+    transition: all 0.4s ease-in; /*Permite realizar animacion*/
+}
+  
+.btn-atras button:hover > svg {
+    font-size: 5.2em; /*Tamaño de la letra*/
+    transform: translateX(-5px); /*Translada el elemento en el eje X*/
+}
+  
+.btn-atras button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; /*Color y tamaño de la sombra */
+    transform: translateY(-2px); /*Translada el elemento en el eje Y*/
+}
+
+
