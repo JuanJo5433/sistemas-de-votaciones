@@ -138,6 +138,9 @@ if ($password != $password_two) {
     $_SESSION['nombres_apellidos'] = $nombres_apellidos;
     $_SESSION['tipo_documento'] = $tipo_documento;
     $_SESSION['documento'] = $documento;
+
+  
+    
     $_SESSION['email'] = $email;
     $_SESSION['genero'] = $genero;
     $_SESSION['password'] = $password;

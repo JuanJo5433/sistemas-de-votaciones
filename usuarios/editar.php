@@ -56,7 +56,7 @@ while ($mostrar = mysqli_fetch_array($querybuscar)) {
                             <option value="T.I" <?php if ($usutd == "T.I") echo 'selected'; ?>>T.I</option>
                             <option value="C.E" <?php if ($usutd == "C.E") echo 'selected'; ?>>C.E</option>
                             <option value="T.E" <?php if ($usutd == "T.E") echo 'selected'; ?>>T.E</option>
-                            <option value="NIT" <?php if ($usutd == "NIT") echo 'selected'; ?>>NIT</option>
+                          
                             <option value="PASAPORTE" <?php if ($usutd == "PASAPORTE") echo 'selected'; ?>>PASAPORTE</option>
                         </select>
                         <!-- Campo de selección para el tipo de documento con opciones predefinidas. -->

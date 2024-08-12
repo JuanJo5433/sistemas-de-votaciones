@@ -15,8 +15,8 @@ $conn = connection(); // Llama a la función para obtener la conexión a la base
     <meta name="keywords" content="registro, elecciones, alcalde, gobernador, representante, sena, junta, comunal"><!--Palabras claves de la pagina-->
     <meta name="author" content="Juan Jose Giraldo, Jhon Faver Alvarez, Yurany Henao"> <!--Autores de la pagina-->
     <link rel="shortcut icon" href="/proyecto_votacion/votaciones/img/icono.png"> <!--Permite añadirle un icono a la pagina-->
-    <link rel="stylesheet" type="text/css" href="css/style_.css">  <!-- Enlaza a un archivo CSS llamado "style_.css". -->
-    <title>Candidatos</title>  <!-- Título de la página web. -->
+    <link rel="stylesheet" type="text/css" href="css/style_.css"> <!-- Enlaza a un archivo CSS llamado "style_.css". -->
+    <title>Candidatos</title> <!-- Título de la página web. -->
 </head>
 
 <body>
@@ -78,7 +78,7 @@ $conn = connection(); // Llama a la función para obtener la conexión a la base
         </table>
         <div style='text-align:right'>
             <br>
-            <?php echo "Total de usuarios: " . $maxusutabla; ?>  <!-- Muestra el total de usuarios en la tabla. -->
+            <?php echo "Total de usuarios: " . $maxusutabla; ?> <!-- Muestra el total de usuarios en la tabla. -->
         </div>
     </div>
     <div style='text-align:right'>
@@ -89,32 +89,32 @@ $conn = connection(); // Llama a la función para obtener la conexión a la base
         if (isset($_GET['pag'])) {
             if ($_GET['pag'] > 1) {
         ?>
-                <a href="index.php?pag=<?php echo $_GET['pag'] - 1; ?>">Anterior</a>  <!-- Enlace a la página anterior si existe. -->
+                <a href="index.php?pag=<?php echo $_GET['pag'] - 1; ?>">Anterior</a> <!-- Enlace a la página anterior si existe. -->
             <?php
             } else {
             ?>
-                <a href="#" style="pointer-events: none">Anterior</a>  <!-- Enlace deshabilitado si no hay página anterior. -->
+                <a href="#" style="pointer-events: none">Anterior</a> <!-- Enlace deshabilitado si no hay página anterior. -->
             <?php
             }
         } else {
             ?>
-            <a href="#" style="pointer-events: none">Anterior</a>  <!-- Enlace deshabilitado si no hay página anterior. -->
-        <?php
+            <a href="#" style="pointer-events: none">Anterior</a> <!-- Enlace deshabilitado si no hay página anterior. -->
+            <?php
         }
 
         if (isset($_GET['pag'])) {
             if (($pagina * $filasmax) < $maxusutabla) {
             ?>
-                <a href="index.php?pag=<?php echo $_GET['pag'] + 1; ?>">Siguiente</a>  <!-- Enlace a la página siguiente si existe. -->
+                <a href="index.php?pag=<?php echo $_GET['pag'] + 1; ?>">Siguiente</a> <!-- Enlace a la página siguiente si existe. -->
             <?php
             } else {
             ?>
-                <a href="#" style="pointer-events: none">Siguiente</a>  <!-- Enlace deshabilitado si no hay página siguiente. -->
+                <a href="#" style="pointer-events: none">Siguiente</a> <!-- Enlace deshabilitado si no hay página siguiente. -->
             <?php
             }
         } else {
             ?>
-            <a href="index.php?pag=2">Siguiente</a>  <!-- Enlace a la segunda página si no se especifica una página. -->
+            <a href="index.php?pag=2">Siguiente</a> <!-- Enlace a la segunda página si no se especifica una página. -->
         <?php
         }
         ?>
